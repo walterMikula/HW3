@@ -26,8 +26,14 @@ public class TreeProblems {
     // This can be done numerous ways, but once such will only that
     // *several* lines of code. Hint: create two temporary TreeSets and utilize the
     // methods retainAll(), addAll(), and removeAll(). But in the end, get something to work.
+    Set<Integer> diff = new TreeSet<>(setA);
+    diff.addAll(setB);
+    Set<Integer> intersection = new TreeSet<>(setA);
+    intersection.retainAll(setB);
+    diff.removeAll(intersection);
+    
 
-    return setA;
+    return diff;
   }
 
 
@@ -38,10 +44,12 @@ public class TreeProblems {
    * remove all <key, value> pairs where the key is even. 
    */
 
-  public static void removeEven(Map<Integer, String> treeMap) {
-
-    // INSERT CODE HERE.
-
+  public static void removeEven(Map<Integer, String> treeMap) {  
+    while (iterator.hasNext()) {
+      if (iterator.next() % 2 == 0) {
+        iterator.remove();
+      }
+    }
     return;
   }
 
@@ -57,7 +65,7 @@ public class TreeProblems {
 
     // INSERT CODE HERE
 
-    return false;
+    return tree1.equals(tree2);
 
   }
 
