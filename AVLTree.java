@@ -1,6 +1,6 @@
 
 /*
- * *** Walter Mikula/ 003 ***
+ * *** Walter Mikula/ 002 ***
  *
  * This java file is a Java object implementing simple AVL Tree.
  * You are to complete the deleteElement method.
