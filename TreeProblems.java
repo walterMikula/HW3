@@ -1,5 +1,5 @@
 /*
- * *** Walter Mikula / 003 ***
+ * *** Walter Mikula / 002 ***
  *
  * This java file contains several simple tree problems that need to be
  * codified. These routines  must use the TreeMap and TreeSet library
